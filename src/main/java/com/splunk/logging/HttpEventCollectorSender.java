@@ -318,7 +318,7 @@ public class HttpEventCollectorSender extends TimerTask implements HttpEventColl
         httpClient.start();
     }
 
-    private HttpAsyncClientBuilder newHttpClientBuilder() {
+    protected HttpAsyncClientBuilder newHttpClientBuilder() {
         return HttpAsyncClients.custom();
     }
 
